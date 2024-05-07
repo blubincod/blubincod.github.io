@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thank You!
+title: blubincod
 sitemap: false
 ---
 

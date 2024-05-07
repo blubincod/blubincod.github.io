@@ -41,21 +41,21 @@ logo: /assets/img/logo.gif
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name: <firstname> <lastname>
-  email: <mail@domain.tld>
+  name: <Junyeob> <Park>
+  email: <bluebinarycode@gmail.com>
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # Add links to the sidebar.
 menu:
-  - title: Blog
-    url: /blog/
-  - title: Projects
+  - title: 프로젝트
     url: /projects/
-  - title: Résumé*
-    url: /resume/
-  - title: Documentation
-    url: /docs/
+  - title: 실습
+    url: /posts/
+  - title: 지식
+    url: /blog/
+  - title: 공부
+    url: /study/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -66,9 +66,11 @@ legal:
     url: /NOTICE/
   - title: CHANGELOG
     url: /CHANGELOG/
+  - title: Github
+    url: https://github.com/blubincod
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2021. All rights reserved.
+copyright: ❼❹ ❽❾ ❽〇
 
 # Format of the permalinks
 permalink: /blog/:categories/:year-:month-:day-:title/
