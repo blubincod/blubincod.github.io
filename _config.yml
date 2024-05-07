@@ -61,10 +61,10 @@ menu:
     submenu:
       - title: 프론트엔드
         url: /frontend/
-  - title: 백엔드
-    url: /backend/
-  - title: 알고리즘
-    url: /algorithm/
+      - title: 백엔드
+        url: /backend/
+      - title: 알고리즘
+        url: /algorithm/
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
