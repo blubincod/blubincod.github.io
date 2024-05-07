@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.9.3"
+gem "jekyll", "~> 4.1"
 
 gem "jekyll-theme-hydejack", path: "./#jekyll-theme-hydejack"
 
@@ -53,5 +53,3 @@ end
 gem 'wdm' if Gem.win_platform?
 gem "tzinfo-data" if Gem.win_platform?
 
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-include-cache", group: :jekyll_plugins

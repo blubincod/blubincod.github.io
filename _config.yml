@@ -19,7 +19,7 @@
 lang: en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title: Starter Kit
+title: Hydejack
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -48,12 +48,14 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title: Example
-    url: /example/
+  - title: Blog
+    url: /blog/
+  - title: Projects
+    url: /projects/
+  - title: Résumé*
+    url: /resume/
   - title: Documentation
     url: /docs/
-  - title: About
-    url: /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -69,17 +71,17 @@ legal:
 copyright: © 2021. All rights reserved.
 
 # Format of the permalinks
-permalink: /:categories/:year-:month-:day-:title/
+permalink: /blog/:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate: 10
-paginate_path: /:num/
+paginate_path: /blog/:num/
 
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
@@ -126,6 +128,7 @@ defaults:
     values:
       sitemap: false
 
+  # Don't include licenses in sitemap (feel free to delete)
   - scope:
       path: licenses/
     values:
@@ -157,7 +160,7 @@ defaults:
         type: WebPage
 
 kramdown:
-  math_engine: mathjax
+  math_engine: katex
   math_engine_opts: {}
   footnote_backlink: '&#x21a9;&#xfe0e;'
 
@@ -285,7 +288,7 @@ hydejack:
 
 collections:
   featured_categories:
-    permalink: /:name/
+    permalink: /blog/:name/
     output: true
 
   featured_tags:
@@ -300,6 +303,8 @@ collections:
 # ----------------------------------------------------------------------------------------
 
 exclude:
+  - ./#jekyll-theme-hydejack/node_modules
+  - ./#jekyll-theme-hydejack/.git
   - .jekyll-cache
   - .sass-cache
   - '*.toml'
