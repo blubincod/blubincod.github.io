@@ -369,7 +369,7 @@ plugins:
 
 # Used on index and about sites
 social:
-  name:                <firstname> <lastname>
+  name: <Junyeob> <Park>
   links:
     - https://twitter.com/blubincod
     - https://github.com/blubincod
