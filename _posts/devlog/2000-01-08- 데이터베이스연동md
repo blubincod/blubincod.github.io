@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "데이터베이스 연동"
+related_posts:
+    - /devlog/
+date:   2024-05-12 08:46:00 +0900
+categories: 
+    - devlog
+description: >
+  MariaDB를 사용하여 데이터베이스 연동하기.
+---
+
+## 데이터베이스 연동
+
+## 엔티티 설계
+
+## 레포지토리 인터페이스 설계
+### 레포지토리 인터페이스 생성
+```java
+public interface TestRepository extends JpaRepository<Test, Long> {
+    
+}
+```
+
+## DAO 설계
+
+
+## DAO 연동을 위한 컨트롤러와 서비스 설계
