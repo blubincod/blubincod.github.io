@@ -5,6 +5,7 @@ description: >
   Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
 hide_description: true
 sitemap: false
+slug: documentation
 permalink: /documentation/
 ---
 
@@ -22,12 +23,10 @@ permalink: /documentation/
 ## 컴퓨터 공학
 * [컴퓨터 구조]{:.heading.flip-title} --- 컴퓨터 구조에 대해 알아보기. 
 * [논리 게이트]{:.heading.flip-title} --- 논리 게이트에 대해 알아보기. 
-* [install]{:.heading.flip-title} --- 논리 게이트에 대해 알아보기. 
-* [notice]{:.heading.flip-title} --- 논리 게이트에 대해 알아보기. 
 
 ## 자료 구조
 
-* [자료 구조]{:.heading.flip-title} --- 자료구조에 대해 알아보기. 
+* [자료구조]{:.heading.flip-title} --- 자료구조에 대해 알아보기. 
 
 ### 선형자료구조
 * [배열 & 연결리스트]{:.heading.flip-title} --- 배열과 연결리스트.
@@ -130,15 +129,14 @@ permalink: /documentation/
 
 
 <!-- 컴퓨터 공학 -->
-[컴퓨터 구조]: ../_posts/studylog/documentation/[컴퓨터공학]01컴퓨터구조.md
-[논리 게이트]: ../_posts/studylog/documentation/[컴퓨터공학]02논리게이트.md
-[install]: ../_posts/studylog/documentation/INSTALL.md
-[notice]: ../_posts/studylog/documentation/NOTICE.md
+[컴퓨터 구조]: ../_posts/studylog/documentation/2024-02-18-[컴퓨터공학]01컴퓨터구조.md
+[논리 게이트]: ../_posts/studylog/documentation/2024-02-18-[컴퓨터공학]02논리게이트.md
+
 <!-- Front-end & Back-end --->
 [프론트엔드 & 백엔드]: ../_posts/studylog/documentation/2024-02-16-front&back.md
 
 <!-- Data Structrue -->
-[자료 구조]: ../_posts/studylog/documentation/자료구조.md
+[자료구조]: ../_posts/studylog/documentation/2024-02-18-자료구조.md
 <!-- 선형 자료구조 -->
 [배열 & 연결리스트]: ../_posts/studylog/documentation/2024-02-19-배열&연결리스트.md
 [스택 & 큐 & 데크]: ../_posts/studylog/documentation/2024-02-22-큐&스택&데크.md

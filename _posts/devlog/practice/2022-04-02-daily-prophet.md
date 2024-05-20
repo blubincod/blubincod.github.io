@@ -4,7 +4,8 @@ title: 'Daily Prophet'
 caption: React JS를 이용하여 만든 움직이는 신문 App
 description: >
   React JS를 이용하여 만든 움직이는 신문 App
-
+date: 2022-04-02 08:45:00 +0900
+categories: [devlog, practice]
 image: 
   path: ..\assets\img\post_img\Daily_prophet_the_boy_who_lies.jpg
 

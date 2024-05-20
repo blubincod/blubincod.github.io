@@ -4,6 +4,8 @@ title: 'Zoom reloaded'
 caption: Vanila JS를 이용하여 만든 Zoom App
 description: >
   Vanila JS를 이용하여 만든 Zoom App
+date: 2022-03-20 08:45:00 +0900
+categories: [devlog, practice]
 image: 
   path: ..\assets\img\post_img\zoom_로고.png
 links:

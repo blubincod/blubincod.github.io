@@ -3,7 +3,8 @@ layout: project
 title: 'React Master'
 caption: React의 다양한 기능을 써보고 구현한 앱.
 description: >
-  
+date: 2022-06-01 08:45:00 +0900
+categories: [devlog, practice]    
 image: 
    path: https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
 
