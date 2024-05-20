@@ -28,10 +28,10 @@ description: >
   with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-tagline: Blue Binary Code
+tagline: Blue Binary Code<br>블로그 이전 중
 
 # A list of keywords for your blog
-keywords: []
+keywords: [blue, java, developer, backend, frontend, js, python, linux]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -50,8 +50,15 @@ author:
 menu:
   # - title: ABOUT
   #   url: /about/
+  - title: NEWS
+    url: /news/
   - title: DEV LOG
-    url: /devlog/  
+    url: /devlog/
+    submenu:
+      - title: 실습
+        url: /practice/
+      - title: 프로젝트
+        url: /project/
   # - title: PROJECT
   #   url: /projects/
   # - title: PRACTICE
@@ -61,10 +68,14 @@ menu:
   - title: STUDY LOG
     url: /studylog/
     submenu:
+      - title: 자료구조
+        url: /datastructure/
       - title: 알고리즘
         url: /algorithm/
       - title: 코딩테스트
-        url: /ct/  
+        url: /ct/
+      - title: Documentation
+        url: /documentation/
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
