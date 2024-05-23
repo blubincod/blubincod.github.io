@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "[Spring] Spring & Spring Boot"
 author: author1
 comments: true

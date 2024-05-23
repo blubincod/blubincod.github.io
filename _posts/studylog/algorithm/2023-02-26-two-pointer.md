@@ -1,17 +1,19 @@
 ---
-layout: page
+layout: post
 title: "투 포인터"
-author: author1
-comments: true
 description: >
-hide_description: true
+  '오퍼레이팅 시스템' 공부를 시작하는 글입니다.
+categories: [studylog, algorithm]
+related_posts: [/studylog/algorithm/content/, /studylog/algorithm/two/]
+comments: true
+# hide_description: true
 sitemap: true
 ---
 
 * this unordered seed list will be replaced by the toc
 {:toc}
 
-## 투 포린터(Two Pointers)
+## 투 포인터(Two Pointers)
 > 배열에서 두 개의 포인터를 사용하여 원하는 결과를 얻는 방법.
 
 포인터 배치 방법

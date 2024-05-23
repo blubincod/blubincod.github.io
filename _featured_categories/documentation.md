@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Documentation
+title: 문서
 description: >
-  Here you should be able to find everything you need to know to accomplish the most common tasks when blogging with Hydejack.
+  “The only way to learn a new programming language is by writing programs in it."<br>– Dennis Ritchie –
 hide_description: true
 sitemap: false
 slug: documentation
@@ -16,35 +16,14 @@ permalink: /documentation/
 0. this unordered seed list will be replaced by toc as unordered list 
 {:toc}
 
-
 * [프론트엔드 & 백엔드]{:.heading.flip-title} --- 프론트엔드와 백엔드란 무엇인가.
 {:.related-posts.faded}
 
-## 컴퓨터 공학
+## [ 컴퓨터 공학 ]
 * [컴퓨터 구조]{:.heading.flip-title} --- 컴퓨터 구조에 대해 알아보기. 
 * [논리 게이트]{:.heading.flip-title} --- 논리 게이트에 대해 알아보기. 
 
-## 자료 구조
-
-* [자료구조]{:.heading.flip-title} --- 자료구조에 대해 알아보기. 
-
-### 선형자료구조
-* [배열 & 연결리스트]{:.heading.flip-title} --- 배열과 연결리스트.
-* [스택 & 큐 & 데크]{:.heading.flip-title} --- 자료구조에 대해 알아보기.
-
-### 비선형자료구조
-* [트리]{:.heading.flip-title} --- 트리에 대해 알아보기.
-
-## 알고리즘
-* [Algorithm Basic]{:.heading.flip-title} --- 알고리즘이란.
-* [Search]{:.heading.flip-title} --- 탐색 공부. 
-* [이진탐색]{:.heading.flip-title} --- 이진탐색 공부. 
-* [Sort]{:.heading.flip-title} --- 정렬 공부. 
-* [투포인터]{:.heading.flip-title} --- 투포인터 공부. 
-* [DFS&BFS]{:.heading.flip-title} --- BFS & DFS.
-* [그리디]{:.heading.flip-title} --- 그리디 공부.
-
-## 프론트엔드
+## [ Frontend ]
 ### HTML
 * [HTML 기본 요소]{:.heading.flip-title} --- HTML 구조와 기본 요소들.
 * [HTML Head 설정]{:.heading.flip-title} --- Head 안에 들어가는 설정들.
@@ -82,14 +61,12 @@ permalink: /documentation/
 ### React Native
 * [React Native & Expo]{:.heading.flip-title} --- React Native에 대해 알아보기.
 
-## 백엔드
+## [ Backend ]
 * [NodeJS]{:.heading.flip-title} --- NodeJS에 대해 알아보기.
 * [NPM]{:.heading.flip-title} --- NPM에 대해 알아보기.
 * [HTTP]{:.heading.flip-title} --- HTTP에 대해 알아보기.
 * [REST]{:.heading.flip-title} --- REST에 대해 알아보기.
 * [Authorization]{:.heading.flip-title} --- Authorization에 대해 알아보기.
-
-### JAVA
 
 ### Spring
 * [스프링 부트란]{:.heading.flip-title} --- 스프링 부트에 대해 알아보기.
@@ -116,16 +93,25 @@ permalink: /documentation/
 ### Pyhton
 * [Python Basic]{:.heading.flip-title} --- 파이썬 기초 문법.
 
+### Java
+
+### Kotlin
+
 ### Linux
 * [WSL]{:.heading.flip-title} --- WSL을 이용하여 Linux에 대해 알아보기. 
 
-## WHY...?
+### Markdown
+* [Markdown Basic]{:.heading.flip-title} --- 마크다운 구문I.
+* [Markdown Writing]{:.heading.flip-title} --- 마크다운 구문II.
+
+## WHY..?!
 * [Why]{:.heading.flip-title} --- ???????.
 * [Errors]{:.heading.flip-title} --- 작업하면서 만난 에러들.
 * [Fomula]{:.heading.flip-title} --- 알아두면 좋은 공식 모음.
 
-* [Markdown Basic]{:.heading.flip-title} --- 마크다운 구문I.
-* [Markdown Writing]{:.heading.flip-title} --- 마크다운 구문II.
+## VS
+* [sbVSsb]{:.heading.flip-title} --- StringBuilder vs StringBuffer.
+* [hmVSht]{:.heading.flip-title} --- HashMap VS HashTable.
 
 
 <!-- 컴퓨터 공학 -->
@@ -135,25 +121,6 @@ permalink: /documentation/
 <!-- Front-end & Back-end --->
 [프론트엔드 & 백엔드]: ../_posts/studylog/documentation/2024-02-16-front&back.md
 
-<!-- Data Structrue -->
-[자료구조]: ../_posts/studylog/documentation/2024-02-18-자료구조.md
-<!-- 선형 자료구조 -->
-[배열 & 연결리스트]: ../_posts/studylog/documentation/2024-02-19-배열&연결리스트.md
-[스택 & 큐 & 데크]: ../_posts/studylog/documentation/2024-02-22-큐&스택&데크.md
-
-<!-- 비선형 자료구조 -->
-[트리]:2../_posts/studylog/documentation/024-02-23-트리.md
-
-<!-- Algorithm -->
-[Algorithm Basic]: ../_posts/studylog/documentation/2022-04-01-algorithm-basic.md
-[Sort]: ../_posts/studylog/documentation/2022-05-02-sort.md
-[Search]: ../_posts/studylog/documentation/2022-05-01-search.md
-[이진탐색]: ../_posts/studylog/documentation/2024-02-24-이진탐색.md
-[투포인터]: ../_posts/studylog/documentation/2024-02-26-투포인터.md
-[DFS&BFS]: ../_posts/studylog/documentation/2022-04-03-dfs&bfs.md
-[그리디]: ../_posts/studylog/documentation/2024-03-01-그리디.md
-
-<!-- ------------------------ -->
 
 <!-- HTML -->
 [HTML 기본 요소]: ../_posts/studylog/documentation/2020-06-01-html기초I.md
@@ -220,8 +187,14 @@ permalink: /documentation/
 
 <!-- Java -->
 
+<!-- Kotlin -->
+
 <!-- Linux -->
 [WSL]: ../_posts/studylog/documentation/2022-01-01-wsl.md
+
+<!-- Markdown -->
+[Markdown Basic]: ../_posts/studylog/documentation/basics.md
+[Markdown Writing]: ../_posts/studylog/documentation/writing.md
 
 <!-- Query Language -->
 [MySQL 기초]: ../_posts/studylog/documentation/2023-01-03-mysql.md
@@ -236,10 +209,13 @@ permalink: /documentation/
 
 <!-- Error -->
 [Errors]: ../_posts/studylog/documentation/2022-12-25-error.md
-[Markdown Basic]: ../_posts/studylog/documentation/basics.md
-[Markdown Writing]: ../_posts/studylog/documentation/writing.md
+
 
 
 <!-- Computer Science -->
 [Why]: ../_posts/studylog/documentation/[WHY]why.md
 [Fomula]: ../_posts/studylog/documentation/[WHY]fomula.md
+
+<!-- VS -->
+[sbVSsb]: ../_posts/studylog/documentation/2024-03-02-[VS]sbVSsb.md
+[hmVSht]: ../_posts/studylog/documentation/2024-03-02-%5BVS%5DhmVSht.md

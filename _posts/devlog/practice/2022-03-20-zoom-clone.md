@@ -3,7 +3,7 @@ layout: project
 title: 'Zoom reloaded'
 caption: Vanila JS를 이용하여 만든 Zoom App
 description: >
-  Vanila JS를 이용하여 만든 Zoom App
+  Vanila JS를 이용하여 만든 Zoom 
 date: 2022-03-20 08:45:00 +0900
 categories: [devlog, practice]
 image: 

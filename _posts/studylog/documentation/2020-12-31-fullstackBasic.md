@@ -3,8 +3,9 @@ layout: page
 title: "풀스택 맛보기1-기본 요소"
 author: author1
 comments: true
-description: >
-hide_description: true
+description: > 
+    안녕하세요
+hide_description: false
 sitemap: true
 ---
 

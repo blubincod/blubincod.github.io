@@ -1,10 +1,12 @@
 ---
-layout: page
+layout: post
 title: "이진 탐색"
-author: author1
-comments: true
 description: >
-hide_description: true
+  '오퍼레이팅 시스템' 공부를 시작하는 글입니다.
+categories: [studylog, algorithm]
+related_posts: [/studylog/algorithm/content/, /studylog/algorithm/two/]
+comments: true
+# hide_description: true
 sitemap: true
 ---
 

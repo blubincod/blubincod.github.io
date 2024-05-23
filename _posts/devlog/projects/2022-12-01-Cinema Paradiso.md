@@ -5,7 +5,7 @@ caption: 영화 앱.
 description: >
   영화 앱
 date: 2022-12-01 08:45:00 +0900
-categories: [devlog, project]
+categories: [devlog, projects]
 image: 
   path: /assets/img/project_img/cinema-paradiso.jpg
 #   srcset: 

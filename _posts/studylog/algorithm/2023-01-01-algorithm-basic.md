@@ -1,10 +1,12 @@
 ---
-layout: page
+layout: post
 title: "알고리즘"
-author: author1
-comments: true
 description: >
-hide_description: true
+  알고리즘이란 무엇인가
+categories: [studylog, algorithm]
+related_posts: [/studylog/algorithm/content/, /studylog/algorithm/two/]
+comments: true
+# hide_description: true
 sitemap: true
 ---
 
