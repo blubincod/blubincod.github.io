@@ -21,7 +21,6 @@ permalink: /documentation/
 * [프론트엔드 & 백엔드]{:.heading.flip-title} --- 프론트엔드와 백엔드란 무엇인가.
 * [컴퓨터 구조]{:.heading.flip-title} --- 컴퓨터 구조에 대해 알아보기. 
 * [논리 게이트]{:.heading.flip-title} --- 논리 게이트에 대해 알아보기. 
-{:.related-posts.faded}
 
 ## [ Frontend ]
 ### HTML
