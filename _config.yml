@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url: https://<BASE URL>.github.io
+url: https://<github>.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -35,9 +35,7 @@ keywords: [blue, java, developer, backend, frontend, js, python, linux]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo: 
-
-# /assets/img/logo.gif
+logo: /assets/img/logo.gif
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
