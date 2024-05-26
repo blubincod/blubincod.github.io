@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "데이터베이스 연동"
 description: >
 hide_description: true

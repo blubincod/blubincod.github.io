@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "스프링 부트란?"
-description: >
-hide_description: true
+description: > 
+    스프링 부트에 대해 알아보기.
+hide_description: false
 categories: [studylog, documentation]
 related_posts: [/studylog/SpringBoot-API/, 
 /studylog/SpringBoot-ConnectDB/,
@@ -10,13 +11,15 @@ related_posts: [/studylog/SpringBoot-API/,
 comments: false
 sitemap: true
 cover: true
+image: 
+    path: /assets/study/spring/springBoot/springLogo.png
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list 
 {:toc}
 
 ## 스프링(Spring)
-![image](/assets/study/spring/springBoot/springLogo.png)
+<!-- ![image](/assets/study/spring/springBoot/springLogo.png) -->
 > Java 기반의 애플리케이션 프레임워크로 **엔터프라이즈급** 애플리케이션을 개발하기 위한 다양한 기능을 제공.<br>
 **엔터프라이즈급: 기업 환경을 대상으로 하는 개발**
 <hr>

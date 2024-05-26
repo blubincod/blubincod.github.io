@@ -19,13 +19,13 @@ url:                   https://username.github.io
 lang: ko-KR, en-US
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title: DevLog
+title: blubincod
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  The things we lose have a way of coming back<br>to us in the end,<br>if not always in the way we expect.
-
+    
+# The things we lose have a way of coming back<br>to us in the end,<br>if not always in the way we expect.
 # A shorter description for the sidebar.
 tagline: Blue Binary Code<br>블로그 이전 중
 
