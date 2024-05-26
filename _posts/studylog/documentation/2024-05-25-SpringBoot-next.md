@@ -1,34 +1,163 @@
 ---
 layout: post
-title:  "연관관계 매핑"
+title: "연관관계 매핑"
 description: >
-hide_description: false
+    JPA를 사용하는 애플리케이션에서 엔티티간의 연관관계 설정하기.
 categories: [studylog, documentation]
 related_posts: [/studylog/documentation/SpringBoot/, 
 /studylog/documentation/SpringBoot-API/,
 /studylog/documentation/SpringBoot-JPA/]
 comments: false
-sitemap: true
-cover:  true
+sitemap: false
+cover:  false
 image: 
-  path: /assets/img/posts/devlog/mariadb-foundation-logo.jpg
+  path: /assets/study/spring/springBoot/connect-zip.jpg
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list 
 {:toc}
 
-## JPA
-![image](/assets/study/spring/springBoot/springLogo.png)
-> 
+RDBMS에서 테이블 연관관계를 설정하듯 정확한 연관관계를 표현할 수 없지만<br>JPA를 사용하는 애플리케이션의 엔티티 간의 연관관계를 표현할 수 있다.
+{:.lead}
+
+## 연관관계 매핑 종류와 방향
+- One To One: 일대일(1:1)
+- One To Many: 일대다(1:N)
+- Many To One: 다대일(N:1)
+- Many To Many: 다대다(N:N)
+
+### 일대일(1:1) 매핑
+> 일대일로 매핑될 상품정보 테이블.
 <hr>
 
-### 스프링의 특징과 구조
-#### 제어 역전 | IoC (Inversion Of Control)
+![image](/assets/study/spring/springBoot/SprintBoot-RelationMapping.png)
+```java
+@Entity
+@Table(name = "product_detail")
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString(callSuper = true);
+@EqualsAndHashCode(callSupeer =true)
+@public class ProductDetail extends BaseEntity {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    private long id;
 
+    private String description;
+
+    @OneToOne
+    @JoinColumn(name = "product_number")
+    private Product product;
+}
+```
+상품 테이블과 상품정보 테이블의 일대일 관계
+{:.figcaption}
+
+#### 일대일 단방향 매핑
+#### 일대일 양방향 매핑 
+
+### 일대다(1:N) 매핑
 > IoC를 적용한 환경에서는 사용할 객체를 직접 생성하지 않고 객체의 생명주기 관리를 **외부**에 위임.<br>IoC를 통해 DI, AOP 등이 가능.<br>
-
-**외부 : 스프링 컨테이너 또는 IoC 컨테이너**<br>
 <hr>
+
+```java
+@Entity
+@Table(name = "product_detail")
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString(callSuper = true);
+@EqualsAndHashCode(callSupeer =true)
+@public class ProductDetail extends BaseEntity {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    private long id;
+
+    private String description;
+
+    @OneToOne
+    @JoinColumn(name = "product_number")
+    private Product product;
+}
+```
+상품 테이블과 상품정보 테이블의 일대일 관계
+{:.figcaption}
+
+#### 일대다 단방향 매핑
+#### 일대다 양방향 매핑 
+#### 다대일(N:1) 매핑
+> IoC를 적용한 환경에서는 사용할 객체를 직접 생성하지 않고 객체의 생명주기 관리를 **외부**에 위임.<br>IoC를 통해 DI, AOP 등이 가능.<br>
+<hr>
+
+```java
+@Entity
+@Table(name = "product_detail")
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString(callSuper = true);
+@EqualsAndHashCode(callSupeer =true)
+@public class ProductDetail extends BaseEntity {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    private long id;
+
+    private String description;
+
+    @OneToOne
+    @JoinColumn(name = "product_number")
+    private Product product;
+}
+```
+상품 테이블과 상품정보 테이블의 일대일 관계
+{:.figcaption}
+
+#### 다대일 단방향 매핑
+#### 다대일 양방향 매핑 
+### 다대다(N:N) 매핑
+> IoC를 적용한 환경에서는 사용할 객체를 직접 생성하지 않고 객체의 생명주기 관리를 **외부**에 위임.<br>IoC를 통해 DI, AOP 등이 가능.<br>
+<hr>
+
+```java
+@Entity
+@Table(name = "product_detail")
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString(callSuper = true);
+@EqualsAndHashCode(callSupeer =true)
+@public class ProductDetail extends BaseEntity {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    private long id;
+
+    private String description;
+
+    @OneToOne
+    @JoinColumn(name = "product_number")
+    private Product product;
+}
+```
+상품 테이블과 상품정보 테이블의 일대일 관계
+{:.figcaption}
+
+#### 다대다 단방향 매핑
+#### 다대다 양방향 매핑 
+
+### 영속성 전이 
+#### 고아 객체
+
+
+
 
 #### 의존성 주입 | DI (Dependency Injection)
 > 제어 역전의 방법 중 하나로 외부 컨테이너가 생성한 객체를 주입받아 사용하는 방식.
