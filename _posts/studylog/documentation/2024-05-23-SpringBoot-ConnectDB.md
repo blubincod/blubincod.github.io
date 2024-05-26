@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "데이터베이스 연동"
 description: >
 hide_description: true
@@ -8,10 +8,10 @@ related_posts: [/studylog/SpringBoot/,
 /studylog/SpringBoot-API/,
 /studylog/SpringBoot-JPA/]
 comments: false
-sitemap: true
 cover:  true
 image: 
   path: /assets/img/posts/devlog/mariadb-foundation-logo.jpg
+sitemap: true
 ---
 
 * this unordered seed list will be replaced by the toc
