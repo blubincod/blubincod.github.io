@@ -12,14 +12,13 @@ comments: false
 sitemap: true
 cover: true
 image: 
-    path: /assets/study/spring/springBoot/springLogo.png
+  path: /assets/study/spring/springBoot/springLogo.png
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list 
 {:toc}
 
 ## 스프링(Spring)
-<!-- ![image](/assets/study/spring/springBoot/springLogo.png) -->
 > Java 기반의 애플리케이션 프레임워크로 **엔터프라이즈급** 애플리케이션을 개발하기 위한 다양한 기능을 제공.<br>
 **엔터프라이즈급: 기업 환경을 대상으로 하는 개발**
 <hr>

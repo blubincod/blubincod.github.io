@@ -2,7 +2,7 @@
 layout: post
 title:  "연관관계 매핑"
 description: >
-hide_description: true
+hide_description: false
 categories: [studylog, documentation]
 related_posts: [/studylog/SpringBoot/, 
 /studylog/SpringBoot-API/,
