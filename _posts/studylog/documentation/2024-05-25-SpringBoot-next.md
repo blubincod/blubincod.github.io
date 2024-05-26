@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "다음"
+title:  "연관관계 매핑"
 description: >
 hide_description: true
 categories: [studylog, documentation]
