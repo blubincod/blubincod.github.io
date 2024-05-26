@@ -4,9 +4,9 @@ title: "JPA 활용하기"
 description: >
 hide_description: true
 categories: [studylog, documentation]
-related_posts: [/studylog/SpringBoot/, 
-/studylog/SpringBoot-ConnectDB/,
-/studylog/SpringBoot-JPA/]
+related_posts: [/studylog/documentation/SpringBoot/, 
+/studylog/documentation/SpringBoot-ConnectDB/,
+/studylog/documentation/SpringBoot-JPA/]
 comments: false
 sitemap: true
 cover: true

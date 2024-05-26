@@ -5,9 +5,9 @@ description: >
     데이터베이스 연동하기.
 hide_description: true
 categories: [studylog, documentation]
-related_posts: [/studylog/SpringBoot/, 
-/studylog/SpringBoot-API/,
-/studylog/SpringBoot-JPA/]
+related_posts: [/studylog/documentation/SpringBoot/, 
+/studylog/documentation/SpringBoot-API/,
+/studylog/documentation/SpringBoot-JPA/]
 comments: false
 cover: true
 image: 

@@ -1,18 +1,17 @@
 ---
 layout: post
 title: "스프링 부트란?"
-description: > 
+description: >
     스프링 부트에 대해 알아보기.
-hide_description: false
 categories: [studylog, documentation]
-related_posts: [/studylog/SpringBoot-API/, 
-/studylog/SpringBoot-ConnectDB/,
-/studylog/SpringBoot-JPA/]
+related_posts: [/studylog/documentation/SpringBoot-API/, 
+/studylog/documentation/SpringBoot-ConnectDB/, 
+/studylog/documentation/SpringBoot-JPA/]
 comments: false
-sitemap: true
 cover: true
 image: 
   path: /assets/study/spring/springBoot/springLogo.png
+sitemap: true
 ---
 
 0. this unordered seed list will be replaced by toc as unordered list 
