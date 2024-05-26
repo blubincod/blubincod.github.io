@@ -82,6 +82,7 @@ permalink: /documentation/
 * [API 작성하기]{:.heading.flip-title} --- HTTP 메서드에 해당하는 API 작성하기.
 * [데이터베이스 연동]{:.heading.flip-title} --- 애플리케이션에 DB 연동하기.
 * [JPA 활용하기]{:.heading.flip-title} --- Spring Data JPA 활용.
+* [연관관계 매핑]{:.heading.flip-title} --- JPA를 사용하는 애플리케이션에서 엔티티간의 연관관계 설정하기.
 
 ## [ 데이터베이스 ]
 ### Query Language
@@ -193,6 +194,7 @@ permalink: /documentation/
 [API 작성하기]: ../_posts/studylog/documentation/2024-05-22-SpringBoot-API.md
 [데이터베이스 연동]: ../_posts/studylog/documentation/2024-05-23-SpringBoot-ConnectDB.md
 [JPA 활용하기]: ../_posts/studylog/documentation/2024-05-24-SpringBoot-JPA.md
+[연관관계 매핑]: ../_posts/studylog/documentation/2024-05-25-SpringBoot-RelationMapping.md
 
 <!-- DB -->
 
