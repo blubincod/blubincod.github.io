@@ -2,13 +2,14 @@
 layout: post
 title:  "데이터베이스 연동"
 description: >
+    데이터베이스 연동하기.
 hide_description: true
 categories: [studylog, documentation]
 related_posts: [/studylog/SpringBoot/, 
 /studylog/SpringBoot-API/,
 /studylog/SpringBoot-JPA/]
 comments: false
-cover:  true
+cover: true
 image: 
   path: /assets/img/posts/devlog/mariadb-foundation-logo.jpg
 sitemap: true
