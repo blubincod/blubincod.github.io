@@ -1,10 +1,13 @@
 ---
-layout: page
-title: "[Spring] API 작성 방법"
-author: author1
-comments: true
+layout: post
+title: "API 작성 방법"
 description: >
 hide_description: true
+categories: [studylog, documentation]
+related_posts: [/studylog/SpringBoot/, 
+/studylog/SpringBoot-ConnectDB/,
+/studylog/SpringBoot-JPA/]
+comments: false
 sitemap: true
 cover: true
 ---
@@ -17,7 +20,7 @@ cover: true
 > 프로그램을 작성하기 위한 일련의 부(Sub) 프로그램, 프로토콜 등을 정의하여 상호 작용을 하기 위한 인터페이스
 <hr>
 
-### REST API란
+<!-- ### REST API란 -->
 
 ### API 작성하기
 ```markdown

@@ -1,10 +1,13 @@
 ---
-layout: page
-title: "[Spring] 스프링 부트"
-author: author1
-comments: true
+layout: post
+title: "스프링 부트란?"
 description: >
 hide_description: true
+categories: [studylog, documentation]
+related_posts: [/studylog/SpringBoot-API/, 
+/studylog/SpringBoot-ConnectDB/,
+/studylog/SpringBoot-JPA/]
+comments: false
 sitemap: true
 cover: true
 ---

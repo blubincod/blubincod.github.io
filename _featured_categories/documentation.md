@@ -16,24 +16,27 @@ permalink: /documentation/
 0. this unordered seed list will be replaced by toc as unordered list 
 {:toc}
 
-* [프론트엔드 & 백엔드]{:.heading.flip-title} --- 프론트엔드와 백엔드란 무엇인가.
-{:.related-posts.faded}
-
 ## [ 컴퓨터 공학 ]
+<hr>
+* [프론트엔드 & 백엔드]{:.heading.flip-title} --- 프론트엔드와 백엔드란 무엇인가.
 * [컴퓨터 구조]{:.heading.flip-title} --- 컴퓨터 구조에 대해 알아보기. 
 * [논리 게이트]{:.heading.flip-title} --- 논리 게이트에 대해 알아보기. 
+{:.related-posts.faded}
 
 ## [ Frontend ]
 ### HTML
+<hr>
 * [HTML 기본 요소]{:.heading.flip-title} --- HTML 구조와 기본 요소들.
 * [HTML Head 설정]{:.heading.flip-title} --- Head 안에 들어가는 설정들.
 * [More Tags]{:.heading.flip-title} --- 그 밖에 다른 태그들.
 
 ### CSS
+<hr>
 * [Reset CSS]{:.heading.flip-title} --- 기본 CSS 초기화시키기.
 * [Useful CSS]{:.heading.flip-title} --- 자주 사용하는 CSS 모음.
 
 ### JavaScript
+<hr>
 * [JS 기초]{:.heading.flip-title} --- JavaScript에서 필요한 기초 개념 및 관련 용어.
 * [JS로 APP 만들기]{:.heading.flip-title} --- express를 사용하여 App 만들기 위한 초기 세팅 및 용어 정리.
 * [express 웹서버 만들기]{:.heading.flip-title} --- express를 이용한 웹 서버 만들기.
@@ -47,21 +50,26 @@ permalink: /documentation/
 * [WebPack]{:.heading.flip-title} --- WebPack 사용하기.
 
 ### TypeScript
+<hr>
 * [TypeScript 기초]{:.heading.flip-title} --- TypeScript에 대해 알아보기.
 
 ### React JS
+<hr>
 * [React JS 기초]{:.heading.flip-title} --- React JS에 대해 알아보기.
 * [React App 만들기]{:.heading.flip-title} --- React App 만들어보기.
 * [React 심화]{:.heading.flip-title} --- React의 다양한 기능 사용해보기.
 * [Recoil]{:.heading.flip-title} --- Recoil 사용법 및 개념.
 
 ### Next JS
+<hr>
 * [Next JS 기초]{:.heading.flip-title} --- Next JS에 대해 알아보기.
 
 ### React Native
+<hr>
 * [React Native & Expo]{:.heading.flip-title} --- React Native에 대해 알아보기.
 
 ## [ Backend ]
+<hr>
 * [NodeJS]{:.heading.flip-title} --- NodeJS에 대해 알아보기.
 * [NPM]{:.heading.flip-title} --- NPM에 대해 알아보기.
 * [HTTP]{:.heading.flip-title} --- HTTP에 대해 알아보기.
@@ -69,49 +77,61 @@ permalink: /documentation/
 * [Authorization]{:.heading.flip-title} --- Authorization에 대해 알아보기.
 
 ### Spring
-* [스프링 부트란]{:.heading.flip-title} --- 스프링 부트에 대해 알아보기.
-* [스프링 부트 시작하기]{:.heading.flip-title} --- 스프링 부트 애플리케이션 만들기.
+<hr>
+* [스프링 부트란?]{:.heading.flip-title} --- 스프링 부트 애플리케이션 만들기.
 * [API 작성하기]{:.heading.flip-title} --- HTTP 메서드에 해당하는 API 작성하기.
+* [데이터베이스 연동]{:.heading.flip-title} --- 애플리케이션에 DB 연동하기.
+* [JPA 활용하기]{:.heading.flip-title} --- Spring Data JPA 활용.
 
-## 데이터베이스
-
+## [ 데이터베이스 ]
 ### Query Language
+<hr>
 * [MySQL 기초]{:.heading.flip-title} --- MySQL에 대해 알아보고 사용해보기. 
 * [GraphQL 기초]{:.heading.flip-title} --- GraphQL 개념 및 사용법.
 
-## Deploy
+## [ Deploy ]
+<hr>
 * [GCP]{:.heading.flip-title} --- GCP에 대해 알아보고 배포해보기. 
 
-## 클라우드 컴퓨팅
+## [ 클라우드 컴퓨팅 ]
 ### AWS
+<hr>
 * [EC2]{:.heading.flip-title} --- AWS EC2로 Node.JS 서버 배포하기. 
 
-## Git
+## [ VS ]
+<hr>
+* [sbVSsb]{:.heading.flip-title} --- StringBuilder vs StringBuffer.
+* [hmVSht]{:.heading.flip-title} --- HashMap VS HashTable.
+
+## [ Git ]
+<hr>
 * [Git 사용법]{:.heading.flip-title} --- Git 사용법에 대해 알아보기. 
 
-## Language
+## [ Language ]
 ### Pyhton
+<hr>
 * [Python Basic]{:.heading.flip-title} --- 파이썬 기초 문법.
 
 ### Java
+<hr>
 
 ### Kotlin
+<hr>
 
 ### Linux
+<hr>
 * [WSL]{:.heading.flip-title} --- WSL을 이용하여 Linux에 대해 알아보기. 
 
 ### Markdown
+<hr>
 * [Markdown Basic]{:.heading.flip-title} --- 마크다운 구문I.
 * [Markdown Writing]{:.heading.flip-title} --- 마크다운 구문II.
 
-## WHY..?!
+## [ WHY ]
+<hr>
 * [Why]{:.heading.flip-title} --- ???????.
 * [Errors]{:.heading.flip-title} --- 작업하면서 만난 에러들.
 * [Fomula]{:.heading.flip-title} --- 알아두면 좋은 공식 모음.
-
-## VS
-* [sbVSsb]{:.heading.flip-title} --- StringBuilder vs StringBuffer.
-* [hmVSht]{:.heading.flip-title} --- HashMap VS HashTable.
 
 
 <!-- 컴퓨터 공학 -->
@@ -169,9 +189,10 @@ permalink: /documentation/
 [Authorization]: ../_posts/studylog/documentation/2022-09-19-authorization.md
 
 <!-- Spring -->
-[스프링 부트란]: ../_posts/studylog/documentation/[Spring]스프링부트_핵심_가이드_01.md
-[스프링 부트 시작하기]: ../_posts/studylog/documentation/[Spring]스프링부트_핵심_가이드_02.md
-[API 작성하기]: ../_posts/studylog/documentation/[Spring]스프링부트_핵심_가이드_03.md
+[스프링 부트란?]: ../_posts/studylog/documentation/2024-05-21-SpringBoot.md
+[API 작성하기]: ../_posts/studylog/documentation/2024-05-22-SpringBoot-API.md
+[데이터베이스 연동]: ../_posts/studylog/documentation/2024-05-23-SpringBoot-ConnectDB.md
+[JPA 활용하기]: ../_posts/studylog/documentation/2024-05-24-SpringBoot-JPA.md
 
 <!-- DB -->
 
@@ -200,12 +221,15 @@ permalink: /documentation/
 [MySQL 기초]: ../_posts/studylog/documentation/2023-01-03-mysql.md
 [GraphQL 기초]: ../_posts/studylog/documentation/2022-10-01-graphql.md
 
-<!-- ------------------------ -->
+
+<!-- VS -->
+[sbVSsb]: ../_posts/studylog/documentation/2024-03-02-[VS]sbVSsb.md
+[hmVSht]: ../_posts/studylog/documentation/2024-03-02-%5BVS%5DhmVSht.md
+
 
 <!-- Git -->
 [Git 사용법]: ../_posts/studylog/documentation/2022-09-01-git.md
 
-<!-- ------------------------ -->
 
 <!-- Error -->
 [Errors]: ../_posts/studylog/documentation/2022-12-25-error.md
@@ -216,6 +240,3 @@ permalink: /documentation/
 [Why]: ../_posts/studylog/documentation/[WHY]why.md
 [Fomula]: ../_posts/studylog/documentation/[WHY]fomula.md
 
-<!-- VS -->
-[sbVSsb]: ../_posts/studylog/documentation/2024-03-02-[VS]sbVSsb.md
-[hmVSht]: ../_posts/studylog/documentation/2024-03-02-%5BVS%5DhmVSht.md

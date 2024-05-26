@@ -1,11 +1,14 @@
 ---
 layout: post
-title:  "COPY"
-related_posts: [studylog]
-date:   2024-05-14 08:45:00 +0900
-categories: [studylog, documentation]
+title:  "데이터베이스 연동"
 description: >
-  MariaDB를 사용하여 데이터베이스 연동하기.
+hide_description: true
+categories: [studylog, documentation]
+related_posts: [/studylog/SpringBoot/, 
+/studylog/SpringBoot-API/,
+/studylog/SpringBoot-JPA/]
+comments: false
+sitemap: true
 cover:  true
 image: 
   path: /assets/img/posts/devlog/mariadb-foundation-logo.jpg
