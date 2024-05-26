@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-url: https://blubincod.github.io
+url: https://<BASE URL>.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -21,11 +21,11 @@ lang: ko-KR, en-US
 # The title of your blog. Used in the sidebar and the browser tab.
 title: blubincod
 
+# The things we lose have a way of coming back<br>to us in the end,<br>if not always in the way we expect.
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
     
-# The things we lose have a way of coming back<br>to us in the end,<br>if not always in the way we expect.
 # A shorter description for the sidebar.
 tagline: Blue Binary Code<br>블로그 이전 중
 
