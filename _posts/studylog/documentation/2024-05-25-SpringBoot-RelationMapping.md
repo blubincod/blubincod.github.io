@@ -4,7 +4,7 @@ title: "연관관계 매핑"
 description: >
     JPA를 사용하는 애플리케이션에서 엔티티간의 연관관계 설정하기.
 categories: [studylog, documentation]
-related_posts: [/studylog/documentation/SpringBoot/, 
+related_posts: [/studylog/documentation/SpringBoot-ConnectDB/, 
 /studylog/documentation/SpringBoot-API/,
 /studylog/documentation/SpringBoot-JPA/]
 comments: false
@@ -24,7 +24,7 @@ RDBMS에서 테이블 연관관계를 설정하듯 정확한 연관관계를 표
 - One To One: 일대일(1:1)
 - One To Many: 일대다(1:N)
 - Many To One: 다대일(N:1)
-- Many To Many: 다대다(N:N)
+- Many To Many: 다대다(M:N)
 
 ### 일대일(1:1) 매핑
 <hr>
@@ -269,7 +269,7 @@ RDBMS에서 테이블 연관관계를 설정하듯 정확한 연관관계를 표
 ```
 공급업체 엔티티와 상품 엔티티의 일대다 연관관계 설정
 {:.figcaption}
-### 다대다(N:N) 매핑
+### 다대다(M:N) 매핑
 <hr>
 
 > 각 엔티티에서 서로를 리스트로 가지는 구조가 만들어진다.<br>이런 경우에는 교차 엔티티라고 부르는 중간 테이블 생성하여 일대다 OR 다대일 관계소 해소한다.<br>
@@ -381,3 +381,6 @@ RDBMS에서 테이블 연관관계를 설정하듯 정확한 연관관계를 표
 {:.lead}
 <hr>
 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=296591989">스프링 부트 핵심 가이드</a> 책을 기반으로 작성하였습니다.
+
+Continue with [연관관계 매핑](2024-05-25-SpringBoot-RelationMapping.md){:.heading.flip-title}
+{:.read-more}

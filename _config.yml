@@ -35,7 +35,7 @@ keywords: [blue, java, developer, backend, frontend, js, python, linux]
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo: /assets/img/logo.gif
+logo: https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzQ5ZWZ3OGt1eXpqOXBqZmxscnF4cXU4aGttMnhjcjdjYmNhdzhmcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6lNSEhgiVSizu/giphy.gif
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -264,7 +264,7 @@ hydejack:
   no_theme_color: false
 
   # Disable the breadcrumbs above the title
-  no_breadcrumbs: false
+  no_breadcrumbs: true
 
   # Set to `true` when building with the `--lsi` option
   use_lsi: true

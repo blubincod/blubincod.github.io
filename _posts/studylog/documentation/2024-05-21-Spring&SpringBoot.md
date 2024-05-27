@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "스프링 부트란?"
+title: "스프링? & 스프링 부트?"
 description: >
     스프링 부트에 대해 알아보기.
 categories: [studylog, documentation]
-related_posts: [/studylog/documentation/SpringBoot-API/, 
-/studylog/documentation/SpringBoot-ConnectDB/, 
-/studylog/documentation/SpringBoot-JPA/]
+related_posts: 
+    - /studylog/documentation/SpringBoot-ConnectDB/
+    - /studylog/documentation/SpringBoot-API/
 comments: false
 cover: true
-image: 
-  path: /assets/study/spring/springBoot/springLogo.png
+image: /assets/study/spring/springBoot/springLogo.png
 sitemap: true
 ---
 
@@ -57,7 +56,7 @@ sitemap: true
 
 ## 스프링 부트(Spring Boot)
 ![image](/assets/study/spring/springBoot/springBootLogo.png)
-> 스프링이 제공하는 다양한 프로젝트 중 하나로 모듈 추가로 인해 설정이 복잡해지는 문제를 해결하기 위해 등장.
+> 스프링이 제공하는 다양한 프로젝트 중 하나로, 모듈 추가로 인해 설정이 복잡해지는 문제를 해결하기 위해 등장.
 <hr>
 
 ### 스프링 부트의 특징
@@ -109,8 +108,12 @@ sitemap: true
 #### 행위 패턴
 - 객체 간의 알고리즘이나 책임 분배에 관한 패턴.
 - 여러 객체를 이용해 작업을 분배.
-<hr>
 
 
 <hr>
+
+## 📄 참고문서
 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=296591989">스프링 부트 핵심 가이드</a> 책을 기반으로 작성하였습니다.
+
+Continue with [API 작성 방법](2024-05-22-SpringBoot-API.md){:.heading.flip-title}
+{:.read-more}

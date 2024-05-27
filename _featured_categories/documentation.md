@@ -13,7 +13,7 @@ permalink: /documentation/
 -- Dennis Ritchie --
 {:.note}
 
-0. this unordered seed list will be replaced by toc as unordered list 
+* this unordered seed list will be replaced by toc as unordered list 
 {:toc}
 
 ## [ 컴퓨터 공학 ]
@@ -77,7 +77,7 @@ permalink: /documentation/
 
 ### Spring
 <hr>
-* [스프링 부트란?]{:.heading.flip-title} --- 스프링 부트 애플리케이션 만들기.
+* [스프링? 스프링 부트?]{:.heading.flip-title} --- 스프링과 스프링 부트란 무엇인가?
 * [API 작성하기]{:.heading.flip-title} --- HTTP 메서드에 해당하는 API 작성하기.
 * [데이터베이스 연동]{:.heading.flip-title} --- 애플리케이션에 DB 연동하기.
 * [JPA 활용하기]{:.heading.flip-title} --- Spring Data JPA 활용.
@@ -189,7 +189,7 @@ permalink: /documentation/
 [Authorization]: ../_posts/studylog/documentation/2022-09-19-authorization.md
 
 <!-- Spring -->
-[스프링 부트란?]: ../_posts/studylog/documentation/2024-05-21-SpringBoot.md
+[스프링? 스프링 부트?]: ../_posts/studylog/documentation/2024-05-21-Spring&SpringBoot.md
 [API 작성하기]: ../_posts/studylog/documentation/2024-05-22-SpringBoot-API.md
 [데이터베이스 연동]: ../_posts/studylog/documentation/2024-05-23-SpringBoot-ConnectDB.md
 [JPA 활용하기]: ../_posts/studylog/documentation/2024-05-24-SpringBoot-JPA.md

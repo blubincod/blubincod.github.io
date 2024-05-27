@@ -4,15 +4,16 @@ title:  "데이터베이스 연동"
 description: >
     데이터베이스 연동하기.
 hide_description: true
-categories: [studylog, documentation]
-related_posts: [/studylog/documentation/SpringBoot/, 
-/studylog/documentation/SpringBoot-API/,
-/studylog/documentation/SpringBoot-JPA/]
+categories: [studylog,documentation]
+related_posts: 
+    - /studylog/documentation/Spring&SpringBoot/
+    - /studylog/documentation/SpringBoot-API/
+    - /studylog/documentation/SpringBoot-JPA/
 comments: false
 cover: true
 image: 
   path: /assets/img/posts/devlog/mariadb-foundation-logo.jpg
-sitemap: true
+sitemap: false
 ---
 
 * this unordered seed list will be replaced by the toc
@@ -277,9 +278,8 @@ public class ProductController {
 ![image](/assets/img/posts/devlog/useSwagger.jpeg)
 <hr>
 
-## 더 알아보기
-<hr>
-- Lombok에 대해 알아보기
+## 📄 참고문서
+<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=296591989">스프링 부트 핵심 가이드</a> 책을 기반으로 작성하였습니다.
 
-<hr>
-<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=296591989" target=_blank>📖 스프링 부트 핵심 가이드</a> 책을 기반으로 작성하였습니다.
+Continue with [JPA 활용하기](2024-05-24-SpringBoot-JPA.md){:.heading.flip-title}
+{:.read-more}

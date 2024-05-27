@@ -4,21 +4,22 @@ title: "API 작성 방법"
 description: >
 hide_description: true
 categories: [studylog, documentation]
-related_posts: [/studylog/SpringBoot/, 
-/studylog/SpringBoot-ConnectDB/,
-/studylog/SpringBoot-JPA/]
+related_posts: 
+    - /studylog/documentation/Spring&SpringBoot/
+    - /studylog/documentation/SpringBoot-ConnectDB/
 comments: false
 sitemap: true
 cover: true
+image: /assets/study/spring/springBoot/apiLogo.png
 ---
 
 * this unordered seed list will be replaced by toc as unordered list 
 {:toc}
 
 ## API란
-![image](/assets/study/spring/springBoot/apiLogo.png)
-> 프로그램을 작성하기 위한 일련의 부(Sub) 프로그램, 프로토콜 등을 정의하여 상호 작용을 하기 위한 인터페이스
 <hr>
+
+> 프로그램을 작성하기 위한 일련의 부(Sub) 프로그램, 프로토콜 등을 정의하여 상호 작용을 하기 위한 인터페이스
 
 <!-- ### REST API란 -->
 
@@ -268,4 +269,9 @@ public class SwaggerConfig {
 </details>
 
 <hr>
+
+## 📄 참고문서
 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=296591989">스프링 부트 핵심 가이드</a> 책을 기반으로 작성하였습니다.
+
+Continue with [데이터베이스 연동](2024-05-23-SpringBoot-ConnectDB.md){:.heading.flip-title}
+{:.read-more}

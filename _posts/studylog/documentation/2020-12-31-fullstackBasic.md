@@ -9,7 +9,7 @@ hide_description: false
 sitemap: true
 ---
 
-0. this unordered seed list will be replaced by toc as unordered list 
+* this unordered seed list will be replaced by toc as unordered list 
 {:toc}
 
 # 풀스택 맛보기
