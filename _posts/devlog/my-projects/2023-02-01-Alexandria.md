@@ -5,7 +5,7 @@ caption: 책의 정보를 얻고 소통할 수 있는 앱.
 description: >
   React JS를 이용하여 만든 ...앱.
 date: 2023-02-01 08:45:00 +0900
-categories: [devlog, myProjects]
+categories: [devlog, my-projects]
 image: 
   path: /assets/img/project_img/book-in-book.jpg
 links:

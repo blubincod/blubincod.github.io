@@ -5,7 +5,7 @@ layout: grid
 title: PROJECTS
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: myProjects
+slug: my-projects
 
 # show_collection: projects
 
