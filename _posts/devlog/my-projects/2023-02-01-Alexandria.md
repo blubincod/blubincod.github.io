@@ -6,11 +6,11 @@ description: >
   React JS를 이용하여 만든 ...앱.
 date: 2023-02-01 08:45:00 +0900
 categories: [devlog, my-projects]
-image: 
-  path: /assets/img/project_img/book-in-book.jpg
+image: /assets/img/project_img/book-in-book.jpg
 links:
   - title: Link   
     url: https://qwtel.com/
+accent_color: 'white'
 sitemap: false
 ---
 

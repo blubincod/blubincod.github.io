@@ -15,7 +15,7 @@ image:
 links:
   - title: Link
     url: https://github.com/JYPIT
-accent_color: 'red'
+accent_color: 'white'
 # accent_image:
 #   background: 'gray'
 # theme_color: 'blue'
