@@ -1,12 +1,11 @@
 ---
-layout: project
+layout: post
 title: 'Converter with React'
 caption: ReactJS를 이용하여 만든 Converter App
 description: >
 date: 2024-05-14 08:45:00 +0900
 categories: [devlog, practice]
-image: 
-  path: ..\assets\img\post_img\converter.png
+image: /assets/img/post_img/converter.png
 links:
   - title: View
     url: https://jypit.github.io/converter-react/

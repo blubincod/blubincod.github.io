@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: 'Kakao Talk reloaded'
 caption: HTML&CSS를 이용하여 만든 카카오톡 App
 description: >

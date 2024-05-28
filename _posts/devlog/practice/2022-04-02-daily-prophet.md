@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: 'Daily Prophet'
 caption: React JS를 이용하여 만든 움직이는 신문 App
 description: >

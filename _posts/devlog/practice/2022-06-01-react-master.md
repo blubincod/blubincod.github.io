@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: 'React Master'
 caption: React의 다양한 기능을 써보고 구현한 앱.
 description: >

@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: 'Just Look'
 caption: React를 이용한 인터넷 쇼핑몰 앱.
 description: >

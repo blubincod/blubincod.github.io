@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: 'Zoom reloaded'
 caption: Vanila JS를 이용하여 만든 Zoom App
 description: >

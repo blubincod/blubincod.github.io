@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: 'Next Movie'
 caption: Next JS를 이용하여 만든 Movie App
 description: >

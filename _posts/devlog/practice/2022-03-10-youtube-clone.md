@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: 'ITube'
 caption: Vanilla JS를 이용하여 만든 동영상 업로드 앱.
 description: >

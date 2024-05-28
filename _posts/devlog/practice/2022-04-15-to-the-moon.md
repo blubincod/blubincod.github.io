@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 title: 'To the Moon'
 caption: 코인 정보 제공 앱.
 description: >

@@ -57,7 +57,7 @@ menu:
       - title: 실습
         url: /practice/
       - title: 프로젝트
-        url: /projects/
+        url: /myProjects/
   # - title: PROJECT
   #   url: /projects/
   # - title: PRACTICE
@@ -198,7 +198,7 @@ google_analytics: G-WC7ZXHL0ZS
 comments:
   provider: disqus
   
-disqus: Eclipse
+disqus: blubincod
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
