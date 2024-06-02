@@ -135,16 +135,49 @@ private boolean booleanCheck;
 #### 스프링 부트의 예외 처리 방식
 <hr>
 
-> 
-
-
 ### 커스텀 예외
 <hr>
 
-> 예외로 처리할 영역이 늘어나고 예외 상황이 다양해지면서 사용하는 예외 타입도 많아진다.
+> 커스텀 예외를 만들어서 사용하면 네이밍에 개발자의 의도를 담을 수 있어 예외 상황을 짐작할 수 있고<br>표준 예외에서도 다양한 예외 상황을 처리 할 수 있다.
 
 #### 커스텀 예외 클래스 생성하기 
 <hr>
+
+```java
+public class CustomException extends Exception {
+    
+    private Constants.ExceptionClass exceptionClass;
+    private HttpStatus httpStatus;
+    
+    public CustomException(Constants.ExceptionClass exceptionClass, HttpSatus httpStatus, String message) {
+        super(exceptionClass.toString() + message);
+        this.exceptionClass = exceptionClass;
+        this.httpStatus = httpStatus;
+    }
+    
+    public Constants.ExceptionClass getExceptionClass() {
+        return exceptionClass;
+    }
+    
+    public int getHttpStatusCode(){
+        return httpSatus.value();
+    }
+    
+    public String getHttpStatusType() {
+        return httpSatus.getReasonPharse();
+    }
+    
+    public HttpStatus getHttpStatus() {
+        return httpStatus;
+    }
+    
+}
+```
+
+```java
+```
+클라이언트 요청에 따라 유동적인 응답 코드를 설정할 수 있다는 장점이 있다.
+{:.lead}
 
 ## 📄 참고문서
 {:.lead}
