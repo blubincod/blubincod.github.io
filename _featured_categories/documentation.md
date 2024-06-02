@@ -82,6 +82,7 @@ permalink: /documentation/
 * [데이터베이스 연동]{:.heading.flip-title} --- 애플리케이션에 DB 연동하기.
 * [JPA 활용하기]{:.heading.flip-title} --- Spring Data JPA 활용.
 * [연관관계 매핑]{:.heading.flip-title} --- JPA를 사용하는 애플리케이션에서 엔티티간의 연관관계 설정하기.
+* [유효성 검사와 예외 처리]{:.heading.flip-title} --- 데이터 사전 검증과 오류 처리를 위한 방법 알아보기..
 
 ## [ 데이터베이스 ]
 ### Query Language
@@ -194,6 +195,7 @@ permalink: /documentation/
 [데이터베이스 연동]: ../_posts/studylog/documentation/2024-05-23-SpringBoot-ConnectDB.md
 [JPA 활용하기]: ../_posts/studylog/documentation/2024-05-24-SpringBoot-JPA.md
 [연관관계 매핑]: ../_posts/studylog/documentation/2024-05-25-SpringBoot-RelationMapping.md
+[유효성 검사와 예외 처리]: ../_posts/studylog/documentation/2024-06-01-SpringBoot-Validatoin-Exception.md
 
 <!-- DB -->
 
