@@ -175,6 +175,14 @@ public class CustomException extends Exception {
 ```
 
 ```java
+ @ExceptionHandler(BoardNotFoundException.class)
+    public Map<String, String> handle(BoardNotFoundException e) {
+        log.error(e.getMessage(), e);
+        Map<String, String> errorAttributes = new HashMap<>();
+        errorAttributes.put("code", "BOARD_NOT_FOUND");
+        errorAttributes.put("message", e.getMessage());
+        return errorAttributes;
+    }
 ```
 클라이언트 요청에 따라 유동적인 응답 코드를 설정할 수 있다는 장점이 있다.
 {:.lead}
