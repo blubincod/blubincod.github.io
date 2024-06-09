@@ -192,5 +192,5 @@ public class CustomException extends Exception {
 <hr>
 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=296591989">스프링 부트 핵심 가이드</a> 책을 기반으로 작성하였습니다.
 
-Continue with [연관관계 매핑](2024-05-25-SpringBoot-RelationMapping.md){:.heading.flip-title}
+Continue with [액추에이터](2024-06-04-SpringBoot-Actuator.md){:.heading.flip-title}
 {:.read-more}
