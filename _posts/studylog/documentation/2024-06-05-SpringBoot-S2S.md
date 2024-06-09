@@ -11,7 +11,7 @@ comments: false
 sitemap: false
 cover:  false
 image: 
-  path: /assets/study/spring/springBoot/Validation-Exception.jpg
+  path: /assets/study/spring/springBoot/S2S.jpg
 ---
 
 * this unordered seed list will be replaced by toc as unordered list 
