@@ -61,17 +61,63 @@ image:
 @Service
 public class RestTmeplateService {
     
-    public String getName
+    public String getName() {
+        URI rui = UriCompomnentsBuilder
+        .fromUriString("http://localhost:9090")
+        .path("api/v1/crud-api")
+        .encode()
+        .build()
+        .toUri();
+        
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity(uri, String.class);
+        
+        return responseEntity.getBody();
+    }
+    
+    public String getNameWithPathVariable(){
+        URI uri = UriComponentsBuilder
+                .fromUriString("http://localhost:9090")
+                .path("/api/v1/crud-api/{name}")
+                .encode()
+                .build()
+                .expand("Flature") // 복수의 값을 넣어야 할 경우 ','를 추가하여 구분
+                .toUri();
+        
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity(uri, String.class);
+        
+        return responseEntity.getBody();
+    }
+    
+    public String getNameWithParameter(){
+        URI uri = UriComponentsBuilder
+                .fromUriString("http://localhost:9090")
+                .path("/api/v1/crud-api/param")
+                .queryParam("name", "Flature")
+                .encode()
+                .build()
+                .toUri();
+        
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> responseEntity = restTemplate.getForEntity(uri, String.class);
+        
+        return responseEntity.getBody();
+    }
 }
 ```
 RestTemplateService의 GET 예제
 {:.figcaption}
 
-현업에서 많이 쓰이나 지원 중단(deprecated)된 상태라 `WebClient` 방식 또한 알아두어야 한다.
-{:.lead}
-
 ### WebClient란?
 <hr>
+
+일반적으로 실제 운영환경에 적용되는 애플리케이션은 정식 버전으로 출시된 스프링 부트의 버전보다 낮은 경우가 많기에 RestTemplate을 많이 사용하고 있다.
+{:.faded}
+
+현재 `RestTemplate`을 지원 중단(deprecated)된 상태라 최신 버전에서는<br> 
+WebClient를 사용할 것을 권고하고 있기에, `WebClient` 방식 또한 알아두어야 한다.
+{:.lead}
 
 
 #### WebClient 사용하기
