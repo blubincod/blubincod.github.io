@@ -2,7 +2,7 @@
 layout: post
 title: "서버 간 통신"
 description: >
-    데이터 사전 검증과 오류를 처리하기 위한 방법을 알아보기.
+    다른 서버로 웹 요청을 보내고 응답 받을 수 있는 방법에 대해 알아보기.
 categories: [studylog, documentation]
 related_posts: [/studylog/documentation/Spring&SpringBoot/, 
 /studylog/documentation/SpringBoot-Validation-Exception/,

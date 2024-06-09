@@ -84,7 +84,7 @@ permalink: /documentation/
 * [연관관계 매핑]{:.heading.flip-title} --- JPA를 사용하는 애플리케이션에서 엔티티간의 연관관계 설정하기.
 * [유효성 검사와 예외 처리]{:.heading.flip-title} --- 데이터 사전 검증과 오류 처리를 위한 방법 알아보기.
 * [액추에이터]{:.heading.flip-title} --- temp.
-* [서버 간 통신]{:.heading.flip-title} --- temp.
+* [서버 간 통신]{:.heading.flip-title} --- 다른 서버로 웹 요청을 보내고 응답 받을 수 있는 방법에 대해 알아보기.
 
 ## [ 데이터베이스 ]
 ### Query Language
