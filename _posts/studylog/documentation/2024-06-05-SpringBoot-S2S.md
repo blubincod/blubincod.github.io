@@ -123,13 +123,91 @@ WebClient를 사용할 것을 권고하고 있기에, `WebClient` 방식 또한 
 #### WebClient 사용하기
 <hr>
 
-##### WebClient 구현하기
-```java
+#### WebFlux 의존성 추가하기
+<hr>
 
+> WebClient를 사용하려면 WebFlux 모듈에 대한 의존성을 추가해야 한다.
+
+```java
+<dependencies>
+    ...
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-webflux</artifactId>
+    </dependency>
+    ...
+</dependencies>
 ```
+WebFlux 의존성 추가
+{:.figcaption}
+
+
+##### WebClient 구현하기
+<hr>
+
+> WebClient를 생성하는 방법
+
+- create()
+- builder() 
+
+
+
+```java
+@Service
+public class WebClientService { 
+    
+    public String getName() {
+        WebClient webClient = WebClient.builder()
+            .baseUrl("http://localhost:9090")
+            .defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
+            .build();
+        
+        return webClient.get()
+            .uri("/api/vi/crud-api")
+            .retrieve()
+            .bodyToMono(String.class)
+            .block();
+    }
+    ...
+}
+```
+builder()를 활용해 WebClient 생성.
+{:.figcaption}
+
+
+```java
+@Service
+public class WebClientService { 
+    
+    ...
+    
+    public String getNameWithPathVariable() {
+        WebClient webClient = WebClient.create("http://localhost:9090");
+        
+        ResponseEntity<String> respnseEntity = webClient.get()
+            .uri(uriBuilder -> uriBuilder.path("/api/v1/crud-api/{name}")
+            .build("Flature"))
+            .retrieve().toEntitty(string.class).block();
+            
+            return responseEntity.getBody(); 
+    }
+}
+```
+create()를 활용해 WebClient 생성.
+{:.figcaption}
+
+> WebClient 객체를 생성한 후 재사용하는 방식으로 구현하는 것이 좋으며<br>builder()를 사용할 경우 아래 메서드로 확장이 가능하다.
+
+- defaultHeader(): WebClient의 기본 헤더 설정
+- defaultCookie(): WebClient의 기본 쿠키 설정
+- defaultUriVariable(): WebClient의 기본 URI 확장값 설정
+- filter(): WebClient에서 발생하는 용청에 대한 필터 설정
+
+## 정리
+<hr>
+다른 서버의 리소스에 접근하는 상황은 자주 발생하므로 위에서 소개한 통신 모듈을 사용하여 기능을 구현하여 해결할 수 있다.
 
 ## 📄 참고문서
-{:.lead}
 <hr>
 <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=296591989">스프링 부트 핵심 가이드</a> 책을 기반으로 작성하였습니다.
 
