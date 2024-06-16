@@ -112,9 +112,23 @@ DelegatingFilterProxy
 - 서명(Signature)
 
 #### 혜더
-#### 내용
-#### 서명
+<hr>
 
+> 검증과 관련된 내용 담고 있음.
+
+#### 내용
+<hr>
+
+> 토큰에 담는 정보를 포함하며, 포함된 속성들은 클레임(Claim)이라 하며, 세가지로 분류.
+
+- 등록된 클레임
+- 공개 클레임
+- 비공개 클레임
+
+#### 서명
+<hr>
+
+> 인코딩된 헤더, 인코딩된 내용, 비밀키, 헤더의 알고리즘 속성값을 가져와 생성.
 ## Spring Security와 JWT 적용해보기
 <hr/>
 
@@ -138,7 +152,18 @@ DelegatingFilterProxy
 Spring Security와 JWT 의존성 추가
 {:.figcaption}
 
-### UserDetails 메서드
+### UserDetails 인터페이스
+> 입력된 로그인 정보를 가지고 데이터베이스에서 사용자 정보를 가져올는 역할을 수행.
+ 
+메서드
+{:.lead}
+- getAuthorities() : 계정이 가지고 있는 권한 목록 리턴
+- getPassword() : 계정의 비밀번호 리턴
+- getUsername() : 계정 이름 리턴
+- isAccountNonExpired() : 계정이 만료됐는지 리턴 -> true는 완료되지 않음
+- isAccountNonLocked() : 계정이 잠겨있는지 리턴 -> true는 잠기지 않음
+- isCredentialNonExpired() : 비밀번호가 만료됐는지 리턴 -> true는 만료되지 않음
+- isEnabled() : 계정이 활성화돼 있는지 리턴 -> true는 활성화 상태
 
 ### JwtTokenProvider 구현
 ```java

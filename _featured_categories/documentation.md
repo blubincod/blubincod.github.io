@@ -85,6 +85,7 @@ permalink: /documentation/
 * [유효성 검사와 예외 처리]{:.heading.flip-title} --- 데이터 사전 검증과 오류 처리를 위한 방법 알아보기.
 * [액추에이터]{:.heading.flip-title} --- temp.
 * [서버 간 통신]{:.heading.flip-title} --- 다른 서버로 웹 요청을 보내고 응답 받을 수 있는 방법에 대해 알아보기.
+* [서비스의 인증과 권한 부여]{:.heading.flip-title} --- 스프링에 보안을 적용할 때 사용하는 스프링 보안(Spring Security)에 대해 알아보기.
 
 ## [ 데이터베이스 ]
 ### Query Language
@@ -200,6 +201,7 @@ permalink: /documentation/
 [유효성 검사와 예외 처리]: ../_posts/studylog/documentation/2024-06-01-SpringBoot-Validation-Exception.md
 [액추에이터]: ../_posts/studylog/documentation/2024-06-05-SpringBoot-temp.md
 [서버 간 통신]: ../_posts/studylog/documentation/2024-06-05-SpringBoot-temp.md
+[서비스의 인증과 권한 부여]: ../_posts/studylog/documentation/2024-06-16-SpringBoot-Authentication-Authorization.md
 
 <!-- DB -->
 
