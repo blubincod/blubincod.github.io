@@ -1,0 +1,331 @@
+---
+layout: post
+title: "서비스의 인증과 권한 부여"
+description: >
+    스프링에 보안을 적용할 때 사용하는 스프링 보안(Spring Security)에 대해 알아보기.
+categories: [studylog, documentation]
+related_posts: [/studylog/documentation/Spring&SpringBoot/, 
+/studylog/documentation/SpringBoot-S2S/,
+/studylog/documentation/SpringBoot-Actuator/]
+comments: false
+sitemap: false
+cover:  false
+image: /assets/study/spring/springBoot/Authentication-Authorization.jpg
+---
+
+* this unordered seed list will be replaced by toc as unordered list 
+{:toc}
+
+## 보안 용어 알아두기
+<hr/>
+
+```md
+인증(Authentication)
+- 사용자가 누구인지 확인하는 단계.
+
+인가(Authorization)
+- 인증을 통해 검증된 사용자가 애플리케이션 내부의 리소스에 접근할 권리가 있는지 확인하는 과정.
+
+접근 주체(Principal)
+- 애플리케이션을 사용하는 주체.
+```
+
+## 스프링 시큐리티(Spring Security)
+<hr/>
+> 인증, 인가 등의 기능을 제공하는 스프링 프레임워크.
+
+
+### 스프링 시큐리티의 동작 구조
+<hr/>
+Spring Security 서블릿 필터(Servlet Filter) 기반으로 동작하며, DispatcherServlet 앞에 필터가 배치되어 있다.
+
+클라이언트에서 요청을 보내면 서블릿 컨테이너는 URI를 확인
+
+필터와 서블릿을 매핑
+
+
+DelegatingFilterProxy
+{:.figcaption}
+
+DelegatingFilterProxy
+> 서블릿 컨테이너의 생명주기와 스프링 애플리케이션 컨텍스트(Application Context) 사이에서 다리 역할을 수행하는 필터 구현체.
+필터체인 프록시는 스프링 부트의 자동 설정에 의해 자동 생성된다.
+
+필터체인 프록시에서 사용할 수 있는 보안 필터체인은 List 형식으로 담을 수 있겍 설정되어 있어 URI 패턴에 따라 특정 보안 필터 체인을 선택해서 사용.
+
+```md
+- ChannelProcessingFilter
+- WebAsyncManagerIntegerationFilter
+- SecurityContextPersitenceFilter
+- HeaderWriterFilter
+- CorsFilter
+- CsrfFilter
+- LogoutFilter
+- OAuth2AuthorizationRequestRedirectFilter
+- Saml2WebSsoAuthenticationRequestFilter
+- X509AuthenticationFilter
+- AbstractPreAuthenticatedProcessingFilter
+- CasAuthenticationFilter
+- OAuth2LoginAuthenticationFilter //이거 책에는 오타.
+- Saml2WebSsoAuthenticationFilter
+- UsernamePasswordAuthenticationFilter
+- OpenIDAuthenticationFilter
+- DefaultLoginPageGeneratingFilter
+- DefaultLogoutPageGeneratingFilter
+- ConcurrentSessionFilter
+- DigestAuthenticationFilter
+- BearerTokenAuthenticationFilter
+- BasicAuthenticationFilter
+- SecurityContextHolderAwareRequestFilter
+- JaasApiIntergrationFilter
+- RememberMeAuthenticationFilter
+- AnonymousAuthenticationFilter
+- OAuth2AuthorizationCodeGrantFilter
+- SessionManagementFilter
+- ExceptionTranslationFilter
+- FilterSecurityInterceptor
+- SwitchUserFilter
+```
+필터의 실행 순서
+{:.figcaption}
+
+보안 필터체인은 WebSecurityConfigurerAdapter 클래스를 상속받아 설정 가능.
+
+<a href="https://docs.spring.io/spring-security/site/docs/5.5.3/reference/html5/">Spring Security에 대한 공식 문서</a>
+
+## JWT(Json Web Token)
+<hr/>
+
+> 당사자 간에 정보를 JSON 형태로 안정하게 전송하기 위한 토큰.
+
+- URL로 이용할 수 있는 문자열로만 구성
+- 디지털 서명이 적용되어 있어 신뢰할 수 있음
+- 주소 서버와의 통신에서 권한 인가를 위해 사용
+
+### JWT 구조
+<hr/>
+
+> 점으로 구분된 아래의 세 부분으로 구성
+
+- 헤더(Header)
+- 내용(Payload)
+- 서명(Signature)
+
+#### 혜더
+#### 내용
+#### 서명
+
+## Spring Security와 JWT 적용해보기
+<hr/>
+
+### 의존성 추가
+```java
+<dependencies>
+    ...
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    
+    <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt</artidactId>
+        <version>0.9.1</version>
+    </dependency>
+    ...
+</dependencies>
+```
+Spring Security와 JWT 의존성 추가
+{:.figcaption}
+
+### UserDetails 메서드
+
+### JwtTokenProvider 구현
+```java
+@Component
+@RequiredArgsConstructor
+public class JwtTokenProvider {
+
+    private final Logger LOGGER = LoggerFactory.getLogger(JwtTokenProvider.class);
+    private final UserDetailsService userDetailsService;
+
+    // secretKey 값 정의
+    @Value("${springboot.jwt.secret}")
+    private String secretKey = "secretKey";
+    private final long tokenValidMillisecond = 1000L * 60 * 60; // 1시간 토큰 유효
+
+    // secretKey를 Base64 형식으로 인코딩
+    @PostConstruct
+    protected void init() {
+        LOGGER.info("[init] JwtTokenProvider 내 secretKey 초기화 시작");
+        System.out.println(secretKey);
+        secretKey = Base64.getEncoder().encodeToString(secretKey.getBytes(StandardCharsets.UTF_8));
+        System.out.println(secretKey);
+        LOGGER.info("[init] JwtTokenProvider 내 secretKey 초기화 완료");
+    }
+
+    // JWT 토큰 생성
+    public String createToken(String userUid, List<String> roles) {
+        LOGGER.info("[createToken] 토큰 생성 시작");
+        Claims claims = Jwts.claims().setSubject(userUid);
+        claims.put("roles", roles);
+
+        Date now = new Date();
+        String token = Jwts.builder()
+            .setClaims(claims)
+            .setIssuedAt(now)
+            .setExpiration(new Date(now.getTime() + tokenValidMillisecond))
+            .signWith(SignatureAlgorithm.HS256, secretKey) // 암호화 알고리즘, secret 값 세팅
+            .compact();
+
+        LOGGER.info("[createToken] 토큰 생성 완료");
+        return token;
+    }
+
+    // JWT 토큰으로 인증 정보 조회
+    public Authentication getAuthentication(String token) {
+        LOGGER.info("[getAuthentication] 토큰 인증 정보 조회 시작");
+        UserDetails userDetails = userDetailsService.loadUserByUsername(this.getUsername(token));
+        LOGGER.info("[getAuthentication] 토큰 인증 정보 조회 완료, UserDetails UserName : {}",
+            userDetails.getUsername());
+        return new UsernamePasswordAuthenticationToken(userDetails, "",
+            userDetails.getAuthorities());
+    }
+
+    // JWT 토큰에서 회원 구별 정보 추출
+    public String getUsername(String token) {
+        LOGGER.info("[getUsername] 토큰 기반 회원 구별 정보 추출");
+        String info = Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody()
+            .getSubject();
+        LOGGER.info("[getUsername] 토큰 기반 회원 구별 정보 추출 완료, info : {}", info);
+        return info;
+    }
+
+     // HTTP Request Header에 설정된 토큰 값을 가져옴
+    public String resolveToken(HttpServletRequest request) {
+        LOGGER.info("[resolveToken] HTTP 헤더에서 Token 값 추출");
+        return request.getHeader("X-AUTH-TOKEN");
+    }
+
+    // JWT 토큰의 유효기간 체크
+    public boolean validateToken(String token) {
+        LOGGER.info("[validateToken] 토큰 유효 체크 시작");
+        try {
+            Jws<Claims> claims = Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
+            LOGGER.info("[validateToken] 토큰 유효 체크 완료");
+            return !claims.getBody().getExpiration().before(new Date());
+        } catch (Exception e) {
+            LOGGER.info("[validateToken] 토큰 유효 체크 예외 발생");
+            return false;
+        }
+    }
+}
+```
+JwtTokenProvider 구현 코드
+{:.figcaption}
+
+### JwtAuthenticationFilter 구현
+>
+
+```java
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
+    private final Logger LOGGER = LoggerFactory.getLogger(JwtAuthenticationFilter.class);
+    private final JwtTokenProvider jwtTokenProvider;
+
+    public JwtAuthenticationFilter(JwtTokenProvider jwtTokenProvider) {
+        this.jwtTokenProvider = jwtTokenProvider;
+    }
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest servletRequest,
+        HttpServletResponse servletResponse,
+        FilterChain filterChain) throws ServletException, IOException {
+        String token = jwtTokenProvider.resolveToken(servletRequest);
+        LOGGER.info("[doFilterInternal] token 값 추출 완료. token : {}", token);
+
+        LOGGER.info("[doFilterInternal] token 값 유효성 체크 시작");
+        if (token != null && jwtTokenProvider.validateToken(token)) {
+            Authentication authentication = jwtTokenProvider.getAuthentication(token);
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+            LOGGER.info("[doFilterInternal] token 값 유효성 체크 완료");
+        }
+
+        filterChain.doFilter(servletRequest, servletResponse);
+    }
+}
+```
+Spring JwtAuthenticationFilter 구현 코드
+{:.figcaption}
+
+### SecurityConfiguration 구현
+> Spring Security와 관련된 설정
+
+```java
+@Configuration
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+    
+    private final JwtTokenProvider jwtTokenProvider;
+    
+    @Autowired
+    public SecurityConfiguration(JwtTokenProvider jwtTokenProvider){
+        this.jwtTokenProvider = jwtTokenProvider;
+    }
+    
+    @Override
+    protected void configure(HttpSecurity httpSecurity) throws Exception{
+        httpSecurity.httpBasic().disable()
+                
+                .csrf().disable()
+                
+                .sessionManagement()
+                .sessionCreationPolicy(
+                        SessionCreationPolicy.STATELESS)
+                .and()
+                .authorizeRequests()
+                .antMatchers("/sign-api/sign-in", "/sign-api/sign-up",
+                        "/sign-api/exception").permitAll()
+                .antMatchers(HttpMethod.GET, "/product/**").permitAll()
+                .antMatchers("**exception**").permitAll()
+                
+                .anyRequest().hasRole("ADMIN")
+                
+                .and()
+                .exceptionHandling().accessDeniedHandler(new CustomAccessDeniedHandler())
+                .and()
+                .exceptionHandling().authenticationEntryPoint(new CustomAuthenticationEntryPoint())
+                
+                .and()
+                .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
+                        UsernamePasswordAuthenticationFilter.class);
+    }
+    
+    @Override
+    public void configure(WebSecurity webSecurity){
+        webSecurity.ignoring().antMatchers("/v2/api-docs", "/swagger-resources/**",
+                "/swagger-ui.html", "/webjars/**", "/swagger/**", "/sign-api/exception");
+    }   
+}
+```
+
+SecurityConfiguration 구현 코드
+{:.figcaption}
+
+> 대표적인 기능
+- 리소스 접근 권한 설정 
+- 인증 실패 시 발생하는 예외 처리
+- 인증 로직 커스터마이징
+- csrf, cors 등의 Spring Security 설정
+
+## 정리
+Spring Security를 통해 로그인 폼으로 로그인과 회원가입 뿐만 아니라<br>
+OAuth나 소셜 로그인을 연동하여 구현도 가능하며 성능상의 이점을 살리기 위해 적용하지 않을 수도 있다.<br>
+개발하는 애플리케이션에 따라 혹은 서비스의 특성에 맞게 잘 활용하도록 하자.
+{:.lead}
+
+## 📄 참고문서
+<hr>
+<a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=296591989">스프링 부트 핵심 가이드</a> 책을 기반으로 작성하였습니다.
+
+Continue with [스프링? 스프링 부트?](2024-05-21-Spring&SpringBoot.md){:.heading.flip-title}
+{:.read-more}
