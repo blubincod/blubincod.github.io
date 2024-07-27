@@ -6,8 +6,7 @@ description: >
   영화 앱
 date: 2022-12-01 08:45:00 +0900
 categories: [devlog, my-projects]
-image: 
-  path: /assets/img/project_img/cinema-paradiso.jpg
+image: /assets/img/projects/cinema-paradiso/cinema-paradiso.jpg
 #   srcset: 
 #     1920w: ../assets/img/project_img/agora.jpg
 #     960w:  ../assets/img/project_img/agora.jpg
