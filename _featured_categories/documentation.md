@@ -2,8 +2,7 @@
 layout: page
 title: 아카이브
 description: >
-  “The only way to learn a new programming language is by writing programs in it."<br>– Dennis Ritchie –
-hide_description: true
+  개발에 필요한 다양한 지식과 기술을 체계적으로 정리한 페이지.
 sitemap: false
 slug: documentation
 permalink: /documentation/

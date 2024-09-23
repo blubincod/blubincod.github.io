@@ -10,7 +10,7 @@ slug: news
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  New Things:)
+  IT 뉴스와 소식.
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true

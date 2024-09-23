@@ -10,7 +10,7 @@ slug: devlog
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  This is a dev log.
+  개발일지
 
 # (Optional) You can disable grouping posts by date.
 no_groups: true

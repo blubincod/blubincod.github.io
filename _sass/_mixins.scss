@@ -38,7 +38,7 @@
     display: block;
     content: "";
     width: 100%;
-    padding-top: math.div($height, $width) * 100%;
+    padding-top: calc(#{$height} / #{$width} * 100%);
   }
 
   > * {
