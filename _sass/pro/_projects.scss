@@ -37,7 +37,7 @@ main:not(.layout-resume) {
 
   @media screen and (min-width: $break-point-dynamic) {
     .columns-break { 
-      $helper: math.div($content-width-5, 2) - $content-margin-5 + math.div($gutter, 2);
+      $helper: calc(($content-width-5 / 2) - $content-margin-5 + ($gutter / 2));
       width: calc(50vw + #{$helper});
       > .column-1-2, 
       > .column-1 {
