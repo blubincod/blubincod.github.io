@@ -21,7 +21,10 @@ cover: true
 
 ## JSP란
 
-### TOMCAT
+### Tomcat
+<hr>
+
+> Apache Tomcat은 Java 서블릿과 JSP를 실행할 수 있는 서블릿 컨테이너
 
 #### Error
 

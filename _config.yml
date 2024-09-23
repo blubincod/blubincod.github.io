@@ -27,7 +27,7 @@ title: blubincod
 description: >
 
 # A shorter description for the sidebar.
-tagline: Blue Binary Code<br>블로그 이전 중
+tagline: Blue Binary Code<br>경험을 기록하는 블로그
 
 # A list of keywords for your blog
 keywords: [blue, java, developer, backend, frontend, js, python, linux]
@@ -54,10 +54,10 @@ menu:
   - title: DEV LOG
     url: /devlog/
     submenu:
-      - title: 실습
-        url: /practice/
       - title: 프로젝트
         url: /my-projects/
+      - title: 실습
+        url: /practice/
   # - title: PROJECT
   #   url: /projects/
   # - title: PRACTICE
@@ -67,14 +67,14 @@ menu:
   - title: STUDY LOG
     url: /studylog/
     submenu:
+      - title: 아카이브
+        url: /documentation/
       - title: 자료구조
         url: /datastructure/
       - title: 알고리즘
         url: /algorithm/
       - title: 코딩테스트
         url: /ct/
-      - title: 문서
-        url: /documentation/
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:

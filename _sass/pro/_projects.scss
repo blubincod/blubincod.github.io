@@ -1,4 +1,5 @@
 // Copyright (c) 2019 Florian Klampfer <https://qwtel.com/>
+@use "sass:math";
 
 main:not(.layout-resume) {
   $gutter: 1rem;
@@ -36,11 +37,11 @@ main:not(.layout-resume) {
 
   @media screen and (min-width: $break-point-dynamic) {
     .columns-break { 
-      $helper: $content-width-5 / 2 - $content-margin-5 + ($gutter * 2);
+      $helper: math.div($content-width-5, 2) - $content-margin-5 + math.div($gutter, 2);
       width: calc(50vw + #{$helper});
       > .column-1-2, 
       > .column-1 {
-        width: ($content-width-5 / 2) + ($gutter / 2);
+        width: math.div($content-width-5, 2) + math.div($gutter, 2);
       }
     }
   }
