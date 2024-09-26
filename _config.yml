@@ -73,8 +73,8 @@ menu:
         url: /datastructure/
       - title: 알고리즘
         url: /algorithm/
-      - title: 코딩테스트
-        url: /ct/
+      # - title: 코딩테스트
+        # url: /ct/
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
