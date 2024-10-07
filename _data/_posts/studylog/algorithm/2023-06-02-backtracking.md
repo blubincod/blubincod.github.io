@@ -14,7 +14,7 @@ sitemap: true
 {:toc}
 
 ## 백트래킹(Backtracking)
-> <font color="black">모든 경우의 수를 탐색하며 최적해를 구하는 과정에서 유망하지 않은 쪽은<br>더 이상 구하지 않는 방법</font>
+> <font color="#A3C1DA">모든 경우의 수를 탐색하며 최적해를 구하는 과정에서 유망하지 않은 쪽은<br>더 이상 구하지 않는 방법</font>
 
 - 정렬된 트리 구조
 
