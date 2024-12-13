@@ -12,7 +12,7 @@ show_collection: practice
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
- 학습과 기술 향상을 위해 진행한 작은 규모의 실습 프로젝트.
+ 학습과 기술 향상을 위해 진행한 작은 규모의 실습 프로젝트
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true

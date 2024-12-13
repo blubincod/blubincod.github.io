@@ -49,8 +49,9 @@ author:
 menu:
   # - title: ABOUT
   #   url: /about/
-  - title: NEWS
-    url: /news/
+  - title: INSIGHT
+    url: /insight/
+    
   - title: DEV LOG
     url: /devlog/
     submenu:
@@ -88,7 +89,7 @@ legal:
     url: https://github.com/blubincod
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: ❼❹ ❽❾ ❽〇
+copyright: ❼❹❽❾❽〇
 
 # Format of the permalinks
 permalink: /:categories/:title/

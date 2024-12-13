@@ -10,7 +10,7 @@ slug: ct
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  코딩 테스트를 통한 알고리즘 공부.
+  코딩 테스트를 통한 알고리즘 공부
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true

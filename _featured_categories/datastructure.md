@@ -10,7 +10,7 @@ slug: datastructure
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  자료구조에 대해 알아보기.
+  자료구조
 
 # (Optional) You can disable grouping posts by date.
 no_groups: true

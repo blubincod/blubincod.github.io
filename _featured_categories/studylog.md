@@ -10,7 +10,7 @@ slug: studylog
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  This is a study log.
+  개발 관련 이론 공부
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true
